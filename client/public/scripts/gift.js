@@ -1,4 +1,8 @@
+console.log("in renderGift")
+
+
 const renderGift = async () => {
+    console.log("in renderGift")
     const requestedID = parseInt(window.location.href.split('/').pop())
     const response = await fetch('/gifts')
     const data = await response.json()

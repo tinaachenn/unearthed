@@ -1,3 +1,5 @@
+console.log("in renderGiftS")
+
 const renderGifts = async () => {
     
     const response = await fetch('/gifts')
