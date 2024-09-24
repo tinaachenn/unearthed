@@ -2,8 +2,10 @@ const renderGift = async () => {
     const requestedID = parseInt(window.location.href.split('/').pop())
     const response = await fetch('/gifts')
     const data = await response.json()
+    console.log(data)
 
     const giftContent = document.getElementById('gift-content')
+    console.log(giftContent)
     let gift
     gift = data.find(gift => gift.id === requestedID)
 
